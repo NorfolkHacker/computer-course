@@ -234,3 +234,5 @@ nav.top .home { font-weight: 700; text-decoration: none; color: var(--ink); }
   a { color: #000; text-decoration: none; }
   .platforms { grid-template-columns: 1fr 1fr; }
 }
+
+.cast, .toc, .print-it { margin: 32px 0; }
