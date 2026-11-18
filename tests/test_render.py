@@ -32,3 +32,24 @@ def test_image_and_escaping():
 def test_page_is_full_document():
     p = render.page("T", "<p>x</p>")
     assert p.startswith("<!doctype html>") and 'name="viewport"' in p and "app.js" in p
+
+LINUX = {"What went wrong": "x", "The Operator says": "x",
+         "The Mender's way": "Intro\n\n### On Debian / Ubuntu / Mint\n```bash\nsudo apt install htop\n```\n\n### On Fedora\n```bash\nsudo dnf install htop\n```\n\n### On Arch\n```bash\nsudo pacman -S htop\n```\n\n### Afterwards\nShared text.\n",
+         "Do it now": "x", "Scribble watch": "x"}
+
+def test_tabs_markup():
+    h = render.lesson_body(L(sections=LINUX), tabs=True)
+    assert '<div class="platforms tabs">' in h
+    for name in ["debian", "fedora", "arch"]:
+        assert f'data-tab="{name}"' in h
+    # the shared section after the group is outside it
+    assert h.index("Afterwards") > h.index("pacman")
+    assert h.count('class="platform ') == 3
+
+def test_grid_is_default():
+    h = render.lesson_body(L(sections=LINUX))
+    assert '<div class="platforms">' in h and "data-tab" not in h
+
+def test_page_root_prefix():
+    p = render.page("T", "<p>x</p>", root="../")
+    assert 'href="../style.css"' in p and 'src="../app.js"' in p and 'href="../index.html"' in p

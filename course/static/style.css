@@ -239,3 +239,39 @@ nav.top .home { font-weight: 700; text-decoration: none; color: var(--ink); }
 }
 
 .cast, .toc, .print-it { margin: 32px 0; }
+
+/* ---------- code blocks (Linux course) ---------- */
+pre {
+  background: var(--term-bg); color: var(--term-ink);
+  border-radius: 10px; padding: 12px 14px; overflow-x: auto;
+  font-size: 0.9rem; line-height: 1.5; margin: 0.8em 0;
+}
+pre code { background: none; border: 0; padding: 0; color: inherit; font-size: inherit; }
+
+/* ---------- distro tabs ---------- */
+.platforms.tabs { display: block; }
+.tabbar { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: -2px; position: relative; }
+.tabbar button {
+  font: inherit; font-size: 0.9rem; font-weight: 700; cursor: pointer; color: var(--ink-soft);
+  min-height: 44px; padding: 8px 14px; border-radius: 10px 10px 0 0;
+  background: var(--paper-2); border: 2px solid var(--line); border-bottom: 0;
+}
+.tabbar button.active { background: var(--paper); color: var(--ink); border-color: var(--purple); }
+.js .platforms.tabs > .platform { display: none; border-radius: 0 10px 10px 10px; border-color: var(--purple); }
+.js .platforms.tabs > .platform.active { display: block; }
+.js .platforms.tabs > .platform > h3 { display: none; }
+.platforms.tabs > .platform + .platform { margin-top: 10px; }
+.js .platforms.tabs > .platform + .platform { margin-top: 0; }
+
+/* ---------- nav, levels, next course ---------- */
+nav.top { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+nav.top .other { font-weight: 700; text-decoration: none; }
+h3.level { margin: 1.4em 0 0.6em; color: var(--orange); }
+.next-course { border: 3px solid var(--purple); }
+
+@media print {
+  .tabbar { display: none; }
+  .js .platforms.tabs > .platform { display: block; margin-top: 8px; }
+  .js .platforms.tabs > .platform > h3 { display: block; }
+  pre { background: #f4f4f4; color: #000; border: 1px solid #999; white-space: pre-wrap; }
+}

@@ -30,23 +30,29 @@ def kebab(name: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 
 
-_PLATFORM_H3 = re.compile(r"<h3>\s*On (Windows|Android)\b.*?</h3>", re.S)
+_PLATFORM_H3 = re.compile(r"<h3>\s*On (Windows|Android|Debian|Fedora|Arch)\b.*?</h3>", re.S)
 
 
-def wrap_platforms(html: str) -> str:
-    """Wrap each '### On Windows/Android' chunk in a div; group neighbours in .platforms."""
+def wrap_platforms(html: str, tabs: bool = False) -> str:
+    """Wrap each '### On <Platform>' chunk in a div; group neighbours in .platforms.
+
+    tabs=True marks the group for the tab UI (app.js) and tags each chunk with data-tab.
+    """
     chunks = re.split(r"(?=<h3>)", html)
     out, group = [], []
+    cls = "platforms tabs" if tabs else "platforms"
 
     def flush():
         if group:
-            out.append('<div class="platforms">' + "".join(group) + "</div>")
+            out.append(f'<div class="{cls}">' + "".join(group) + "</div>")
             group.clear()
 
     for chunk in chunks:
         m = _PLATFORM_H3.match(chunk)
         if m:
-            group.append(f'<div class="platform platform-{m.group(1).lower()}">{chunk}</div>')
+            name = m.group(1).lower()
+            attr = f' data-tab="{name}"' if tabs else ""
+            group.append(f'<div class="platform platform-{name}"{attr}>{chunk}</div>')
         else:
             flush()
             out.append(chunk)
@@ -79,7 +85,7 @@ def section(name: str, inner: str) -> str:
     )
 
 
-def lesson_body(lesson: Lesson, img_prefix: str = "img/") -> str:
+def lesson_body(lesson: Lesson, img_prefix: str = "img/", tabs: bool = False) -> str:
     hero = (
         f'<img class="hero" src="{img_prefix}{escape(lesson.image)}.png" alt="">' if lesson.image else ""
     )
@@ -94,15 +100,18 @@ def lesson_body(lesson: Lesson, img_prefix: str = "img/") -> str:
         else:
             inner = md(lesson.sections[name])
             if name == "The Mender's way":
-                inner = wrap_platforms(inner)
+                inner = wrap_platforms(inner, tabs)
             secs.append(section(name, inner))
     return (
         f'<article class="lesson" id="{lesson.slug}" data-slug="{lesson.slug}">{head}{"".join(secs)}</article>'
     )
 
 
-def page(title: str, body: str, nav: str = "", body_class: str = "") -> str:
-    full = escape(title) if title == SITE_TITLE else f"{escape(title)} · {escape(SITE_TITLE)}"
+def page(title: str, body: str, nav: str = "", body_class: str = "", root: str = "",
+         site_title: str = SITE_TITLE, home: str | None = None, links: str = "") -> str:
+    """A full HTML document. root is the path prefix back to the site root ("" or "../")."""
+    home = home if home is not None else f"{root}index.html"
+    full = escape(title) if title == site_title else f"{escape(title)} · {escape(site_title)}"
     return f"""<!doctype html>
 <html lang="en-GB">
 <head>
@@ -112,17 +121,17 @@ def page(title: str, body: str, nav: str = "", body_class: str = "") -> str:
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Patrick+Hand&display=swap">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="{root}style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐄</text></svg>">
 </head>
 <body class="{body_class}">
 <a class="skip" href="#main">Skip to the lesson</a>
-<nav class="top"><a href="index.html" class="home">🐄 {escape(SITE_TITLE)}</a></nav>
+<nav class="top"><a href="{home}" class="home">🐄 {escape(site_title)}</a>{links}</nav>
 <main id="main">
 {body}
 </main>
 {nav}
-<script src="app.js"></script>
+<script src="{root}app.js"></script>
 </body>
 </html>
 """
