@@ -40,14 +40,21 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 .venv/bin/pytest -q                  # tests
 .venv/bin/python build.py            # main/*.md -> site/
 .venv/bin/python scripts/check_site.py
-scripts/make_pdf.sh                  # site/handbook.html -> handbook.pdf (needs Chromium)
+scripts/make_pdf.sh                  # both handbooks -> handbook.pdf, linux-handbook.pdf (needs Chromium)
 ```
 
 Pushing to `main` rebuilds and publishes the site with GitHub Actions. Re-run
-`scripts/make_pdf.sh` and commit `handbook.pdf` when lessons change.
+`scripts/make_pdf.sh` and commit the PDFs when lessons change.
 
 Pictures come from the felt film (`scripts/make_images.py`).
 
-## Coming later
+## Part two: the Linux course
 
-A separate Linux course, from first install to running your own server.
+**Take it:** https://norfolkhacker.github.io/computer-course/linux/
+**Print it:** [linux-handbook.pdf](linux-handbook.pdf)
+
+A second A–Z, from "what is Linux" to building and securing a home server, in four levels
+(desktop, terminal, power user, admin). Wherever a command differs, each lesson shows tabs
+for **Debian / Ubuntu / Mint**, **Fedora / RHEL** and **Arch / Manjaro**; pick yours once
+and the site remembers. Lessons live in [`linux/`](linux/); the extra rules are in
+[`docs/linux-style-guide.md`](docs/linux-style-guide.md).
