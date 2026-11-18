@@ -77,3 +77,13 @@ def test_letter_mismatch(tmp_path):
 def test_error_names_file(tmp_path):
     with pytest.raises(LessonError, match="A-parts-of-a-computer.md"):
         parse_lesson(write(tmp_path, GOOD.replace("why: Because.", "", 1)))
+
+def test_hash_lines_inside_code_blocks_are_not_sections(tmp_path):
+    text = GOOD.replace("1. Do it.", "1. Do it.\n\n```bash\n## not a heading\nls -l\n```\n")
+    l = parse_lesson(write(tmp_path, text))
+    assert "## not a heading" in l.sections["The Mender's way"]
+
+def test_level_front_matter(tmp_path):
+    assert parse_lesson(write(tmp_path, GOOD)).level is None
+    l = parse_lesson(write(tmp_path, GOOD.replace("image: psych", "image: psych\nlevel: 2")))
+    assert l.level == 2

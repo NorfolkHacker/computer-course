@@ -27,6 +27,28 @@ class Lesson:
     image: str | None
     sections: dict[str, str]
     quiz: list[Question]
+    level: int | None = None
+
+
+_FENCE = re.compile(r"^```.*?^```[ \t]*$", re.S | re.M)
+
+
+def _split_sections(body: str) -> list[str]:
+    """Split on '## ' headings, ignoring lines inside fenced code blocks."""
+    masks = {}
+
+    def hide(m):
+        key = f"\x00FENCE{len(masks)}\x00"
+        masks[key] = m.group(0)
+        return key
+
+    hidden = _FENCE.sub(hide, body)
+    parts = re.split(r"^## (.+?)\s*$", hidden, flags=re.M)
+    for i, part in enumerate(parts):
+        for key, val in masks.items():
+            part = part.replace(key, val)
+        parts[i] = part
+    return parts
 
 
 def _fail(path, msg):
@@ -47,7 +69,7 @@ def parse_lesson(path: pathlib.Path) -> Lesson:
     if path.stem[:1].upper() != letter:
         _fail(path, f"file name letter does not match letter '{letter}'")
 
-    parts = re.split(r"^## (.+?)\s*$", body, flags=re.M)
+    parts = _split_sections(body)
     found, order = {}, []
     for name, content in zip(parts[1::2], parts[2::2]):
         order.append(name)
@@ -81,4 +103,7 @@ def parse_lesson(path: pathlib.Path) -> Lesson:
         quiz.append(Question(str(item["q"]), opts, ans, str(item["why"])))
 
     sections = {s: found[s] for s in SECTIONS if s != "Quiz"}
-    return Lesson(letter, str(meta["title"]), path.stem.lower(), meta.get("image"), sections, quiz)
+    level = meta.get("level")
+    if level is not None and (not isinstance(level, int) or isinstance(level, bool)):
+        _fail(path, f"level must be a whole number, got {level!r}")
+    return Lesson(letter, str(meta["title"]), path.stem.lower(), meta.get("image"), sections, quiz, level)
