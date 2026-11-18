@@ -4,7 +4,7 @@ title: Extra Care with Privacy
 image: unicorn-boy
 ---
 
-## Cold open
+## What went wrong
 
 *Otic on his phone, beaming, typing a post.*
 

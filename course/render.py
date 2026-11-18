@@ -10,7 +10,7 @@ from .lesson import Lesson
 SITE_TITLE = "The Operator's Computer Course"
 
 ICONS = {
-    "Cold open": "🎬",
+    "What went wrong": "🎬",
     "The Operator says": "☠️",
     "The Mender's way": "🧵",
     "Do it now": "✋",
@@ -19,7 +19,7 @@ ICONS = {
 }
 
 # Order the sections are shown in (matches the spec; Quiz comes from lesson.quiz).
-ORDER = ["Cold open", "The Operator says", "The Mender's way", "Do it now", "Quiz", "Scribble watch"]
+ORDER = ["What went wrong", "The Operator says", "The Mender's way", "Do it now", "Quiz", "Scribble watch"]
 
 
 def md(text: str) -> str:

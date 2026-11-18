@@ -11,7 +11,7 @@ lesson able to *do* the thing, not just know about it.
 
 ## The golden rule
 
-**Jokes go in the framing. Instructions are plain.** The cold open, the Operator and the
+**Jokes go in the framing. Instructions are plain.** What went wrong, the Operator and the
 Scribble watch can be as daft as you like. The Mender's steps, Do it now and the quiz
 explanations must be literal, accurate and calm. A beginner must never have to decode a
 joke to learn a step.
@@ -40,7 +40,7 @@ joke to learn a step.
 
 ## Sections
 
-### Cold open (80–150 words)
+### What went wrong (80–150 words)
 A tiny script. Psych & Otic try the lesson's task and go wrong in a cartoonish but
 *realistic* way: the mistake must be one real beginners make (double-clicking too slowly,
 holding the power button to shut down, typing the website into the search box...).
@@ -77,7 +77,7 @@ data, cost money or contact strangers.
 ### Quiz
 Exactly three questions in the fenced `quiz` YAML block. 3–4 options each. `answer` is
 the 0-based index of the right option. `why` is one or two plain sentences. Wrong options
-should be the real mistakes from the cold open, not silly ones. Quote any value that has
+should be the real mistakes from What went wrong, not silly ones. Quote any value that has
 a colon in it.
 
 ### Scribble watch (40–80 words)

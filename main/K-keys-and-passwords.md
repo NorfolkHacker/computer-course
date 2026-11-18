@@ -4,7 +4,7 @@ title: Keys and Passwords
 image: psych-smash
 ---
 
-## Cold open
+## What went wrong
 
 *Psych at the computer, signing up for a pizza website. Otic holds a cushion nervously.*
 

@@ -4,7 +4,7 @@ import pathlib, re
 from dataclasses import dataclass
 import yaml
 
-SECTIONS = ["Cold open", "The Operator says", "The Mender's way", "Do it now", "Quiz", "Scribble watch"]
+SECTIONS = ["What went wrong", "The Operator says", "The Mender's way", "Do it now", "Quiz", "Scribble watch"]
 
 
 class LessonError(Exception):

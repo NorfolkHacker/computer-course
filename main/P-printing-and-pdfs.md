@@ -4,7 +4,7 @@ title: Printing, PDFs and Scanning
 image: psych-smash
 ---
 
-## Cold open
+## What went wrong
 
 *Psych has a one-page form open on the screen. He clicks* **Print**. *Nothing happens. He clicks it again. And again. And again.*
 

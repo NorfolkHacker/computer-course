@@ -4,7 +4,7 @@ title: Lifeboats
 image: jar
 ---
 
-## Cold open
+## What went wrong
 
 *Psych and Otic, gazing at the computer. On the screen: a folder of photos. Mum's 70th. The holiday. The dog.*
 

@@ -10,7 +10,7 @@ and Otic from the felt cartoon *Psych and Otic*.
 
 ## How each lesson works
 
-1. **Cold open:** Psych and Otic have a go and get it wrong.
+1. **What went wrong:** Psych and Otic have a go and get it wrong.
 2. **The Operator says:** why that annoys him, and why it matters.
 3. **The Mender's way:** the proper method, step by step, for Windows and Android.
 4. **Do it now:** you do it for real.

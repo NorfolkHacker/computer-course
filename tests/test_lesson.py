@@ -8,7 +8,7 @@ GOOD = textwrap.dedent('''\
     image: psych
     ---
 
-    ## Cold open
+    ## What went wrong
     **Psych:** Hello.
 
     ## The Operator says
@@ -49,7 +49,7 @@ def test_parses_good_lesson(tmp_path):
     l = parse_lesson(write(tmp_path, GOOD))
     assert (l.letter, l.title, l.slug, l.image) == ("A", "The Parts of a Computer", "a-parts-of-a-computer", "psych")
     assert list(l.sections) == [s for s in SECTIONS if s != "Quiz"]
-    assert l.sections["Cold open"].strip() == "**Psych:** Hello."
+    assert l.sections["What went wrong"].strip() == "**Psych:** Hello."
     assert len(l.quiz) == 3 and l.quiz[2].answer == 3 and l.quiz[1].why == "Because."
 
 def test_missing_section(tmp_path):

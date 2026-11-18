@@ -4,7 +4,7 @@ title: Finding Things
 image: huh
 ---
 
-## Cold open
+## What went wrong
 
 *Otic's email is open. It has a PDF attached: a form from the council.*
 

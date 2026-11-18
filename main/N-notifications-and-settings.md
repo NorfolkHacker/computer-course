@@ -4,7 +4,7 @@ title: Notifications and Settings
 image: mooo
 ---
 
-## Cold open
+## What went wrong
 
 *Night. Otic in bed, trying to sleep. His phone, on the bedside table, lights up. BING. A game wants him to collect his free coins. BING. A shop has a sale. BING.*
 

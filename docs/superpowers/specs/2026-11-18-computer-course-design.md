@@ -69,7 +69,7 @@ and easy to follow. A beginner must never have to decode a joke to learn the ste
 
 Every lesson has the same sections:
 
-1. **Cold open**: a short scene where Psych & Otic get it wrong.
+1. **What went wrong**: a short scene where Psych & Otic get it wrong.
 2. **The Operator says**: a grim one-paragraph summary of why this matters.
 3. **The Mender's way**: numbered steps; Windows and Android side by side where both apply.
 4. **Do it now**: a hands-on practice task.

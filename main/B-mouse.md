@@ -4,7 +4,7 @@ title: The Mouse
 image: psych-up
 ---
 
-## Cold open
+## What went wrong
 
 *Psych and Otic at the desk. On the screen, a small yellow folder icon.*
 

@@ -4,7 +4,7 @@ title: Zen
 image: jar
 ---
 
-## Cold open
+## What went wrong
 
 *Psych's desktop, covered in icons. The taskbar shows a little badge: 47 updates waiting. A pop-up says* Restart required. *Psych clicks* **Remind me later**, *as he has done every day since March.*
 

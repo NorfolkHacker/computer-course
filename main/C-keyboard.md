@@ -4,7 +4,7 @@ title: The Keyboard and Typing
 image: mooo
 ---
 
-## Cold open
+## What went wrong
 
 *A sign-in screen. Psych types his password, one finger at a time.*
 

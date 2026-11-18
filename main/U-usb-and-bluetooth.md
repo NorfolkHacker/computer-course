@@ -4,7 +4,7 @@ title: USB and Bluetooth
 image: psych-smash
 ---
 
-## Cold open
+## What went wrong
 
 *Psych holds a memory stick. He tries to push it into the computer. It won't go in. He turns it over. It still won't go in. He turns it over again.*
 

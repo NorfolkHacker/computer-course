@@ -4,7 +4,7 @@ title: Office Documents
 image: otic
 ---
 
-## Cold open
+## What went wrong
 
 *Psych has typed a three-page letter to the council. He is very proud of it.*
 

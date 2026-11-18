@@ -4,7 +4,7 @@ title: Junk and Scams
 image: propellor-boy
 ---
 
-## Cold open
+## What went wrong
 
 *Propellor Boy and Unicorn Boy share a phone. A text arrives: "Royal Mail: your parcel could not be delivered. Pay £1.45 redelivery fee within 24 hours or it will be returned."*
 

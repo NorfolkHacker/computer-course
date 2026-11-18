@@ -114,13 +114,13 @@ nav.top .home { font-weight: 700; text-decoration: none; color: var(--ink); }
   margin: 18px 0;
 }
 .s h2 .ico { font-size: 1.1em; }
-.s-cold-open {
+.s-what-went-wrong {
   border: 3px dashed var(--orange);
   background: var(--paper-2);
   font-size: 1.02rem;
 }
-.s-cold-open p { margin: 0.5em 0; }
-.s-cold-open em { color: var(--ink-soft); }
+.s-what-went-wrong p { margin: 0.5em 0; }
+.s-what-went-wrong em { color: var(--ink-soft); }
 .s-the-operator-says {
   background: var(--term-bg); color: var(--term-ink); border-color: #000;
 }
@@ -221,7 +221,7 @@ nav.top .home { font-weight: 700; text-decoration: none; color: var(--ink); }
   main { max-width: none; padding: 0; }
   .s { break-inside: auto; border-width: 1.5px; box-shadow: none; padding: 10px 14px; margin: 10px 0; }
   h2, h3 { break-after: avoid; }
-  .s-cold-open, .s-the-operator-says, .s-scribble-watch, .platform, tr { break-inside: avoid; }
+  .s-what-went-wrong, .s-the-operator-says, .s-scribble-watch, .platform, tr { break-inside: avoid; }
   .cover-img { width: auto; height: 9cm; }
   .s-the-operator-says { border: 2px solid #000; }
   .s-the-operator-says h2::after { content: none; }

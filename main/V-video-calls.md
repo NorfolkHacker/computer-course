@@ -4,7 +4,7 @@ title: Video Calls
 image: otic
 ---
 
-## Cold open
+## What went wrong
 
 *Otic sits in front of the laptop. On the screen, a video call. A small grey box shows only his initials. Behind him, a bright window turns him into a black shape.*
 

@@ -4,7 +4,7 @@ title: The Parts of a Computer
 image: psych
 ---
 
-## Cold open
+## What went wrong
 **Psych:** Hello.
 
 ## The Operator says

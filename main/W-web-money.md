@@ -4,7 +4,7 @@ title: Web Money
 image: propellor-boy
 ---
 
-## Cold open
+## What went wrong
 
 *Psych at the laptop. An advert fills the screen: a huge telly, £49, "TODAY ONLY, 3 LEFT!"*
 

@@ -3,7 +3,7 @@ from course import render
 
 def L(**kw):
     base = dict(letter="A", title="Parts", slug="a-parts", image="psych",
-        sections={"Cold open": "**Psych:** Hi.", "The Operator says": "Grim.",
+        sections={"What went wrong": "**Psych:** Hi.", "The Operator says": "Grim.",
                   "The Mender's way": "1. Step\n\n### On Windows\nWin steps\n\n### On Android\nPhone steps\n",
                   "Do it now": "Try.", "Scribble watch": "Careful."},
         quiz=[Question("One?", ["a", "b", "c"], 1, "Because.")] * 3)
@@ -12,7 +12,7 @@ def L(**kw):
 
 def test_article_has_all_sections_in_order():
     h = render.lesson_body(L())
-    idx = [h.index(s) for s in ["Cold open", "The Operator says", "The Mender&#x27;s way", "Do it now", "Quiz", "Scribble watch"]]
+    idx = [h.index(s) for s in ["What went wrong", "The Operator says", "The Mender&#x27;s way", "Do it now", "Quiz", "Scribble watch"]]
     assert idx == sorted(idx)
 
 def test_platforms_wrapped():

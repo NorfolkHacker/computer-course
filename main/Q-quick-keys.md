@@ -4,7 +4,7 @@ title: Quick Keys
 image: whoosh
 ---
 
-## Cold open
+## What went wrong
 
 *Psych wants to copy a long address from an email into a letter. He has the letter open beside it. He squints at the email and starts typing it out, one finger at a time.*
 

@@ -4,7 +4,7 @@ title: Desktop, Windows, Start and Taskbar
 image: whudonk
 ---
 
-## Cold open
+## What went wrong
 
 *Psych has a letter open in Notepad. He clicks the little line in the top corner. The window vanishes.*
 

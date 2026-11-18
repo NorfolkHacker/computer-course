@@ -4,7 +4,7 @@ title: Security and Updates
 image: scribble
 ---
 
-## Cold open
+## What went wrong
 
 *The computer shows a small message in the corner:* Restart required. Your device will restart outside active hours.
 

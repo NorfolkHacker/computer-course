@@ -4,7 +4,7 @@ title: Hunting the Web
 image: propellor-boy
 ---
 
-## Cold open
+## What went wrong
 
 *Otic holds up his passport. It expired last month.*
 

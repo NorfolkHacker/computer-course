@@ -4,7 +4,7 @@ title: Your Accounts
 image: ohno
 ---
 
-## Cold open
+## What went wrong
 
 *Psych at the computer. A sign-in page.* Enter password. *He types. Red writing:* That password is incorrect.
 

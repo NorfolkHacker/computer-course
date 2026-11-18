@@ -4,7 +4,7 @@ title: Getting Online
 image: whoosh
 ---
 
-## Cold open
+## What went wrong
 
 *Psych at the computer. Otic reading from a leaflet.*
 

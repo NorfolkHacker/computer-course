@@ -4,7 +4,7 @@ title: Troubleshooting
 image: whudonk
 ---
 
-## Cold open
+## What went wrong
 
 *Word has frozen. The page is greyed out and the title bar says* (Not Responding). *Psych clicks on it. Then clicks again. Then clicks everywhere, very fast.*
 

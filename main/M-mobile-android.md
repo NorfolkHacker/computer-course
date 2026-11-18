@@ -4,7 +4,7 @@ title: Mobile Phones (Android)
 image: psych-up
 ---
 
-## Cold open
+## What went wrong
 
 *Otic holds his new Android phone in both hands like a baby bird. Psych hovers.*
 
@@ -67,7 +67,7 @@ To switch between them, open **Settings** and search for `navigation mode` (on a
 
 - **Volume up / down**: press to change the volume. A slider appears on the screen.
 - **Power** (or **side**) button: a **short press** locks the phone and turns the screen off; another short press wakes it.
-- **Switching off or restarting:** on many phones, holding the power button opens the assistant (like in the cold open). Instead, swipe down twice from the top and tap the **power** icon ⏻ in Quick Settings, then **Power off** or **Restart**. On a Pixel you can also press **Power** and **Volume up** together.
+- **Switching off or restarting:** on many phones, holding the power button opens the assistant (like in **What went wrong** above). Instead, swipe down twice from the top and tap the **power** icon ⏻ in Quick Settings, then **Power off** or **Restart**. On a Pixel you can also press **Power** and **Volume up** together.
 
 ### Installing apps: only from the Play Store
 

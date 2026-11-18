@@ -4,7 +4,7 @@ title: Files and Folders
 image: jar
 ---
 
-## Cold open
+## What went wrong
 
 *The desktop. It is completely covered in icons: photos, letters, "letter (2)", "letter FINAL", "letter FINAL real".*
 

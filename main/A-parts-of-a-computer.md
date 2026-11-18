@@ -4,7 +4,7 @@ title: The Parts of a Computer
 image: psych
 ---
 
-## Cold open
+## What went wrong
 
 *A desk. On it: a computer. Psych and Otic stare at it like it might bite.*
 

@@ -4,7 +4,7 @@ title: Running Programs
 image: unicorn-boy
 ---
 
-## Cold open
+## What went wrong
 
 *Psych searches for* free photo editor download *and clicks the first result. It has five big green buttons that say* DOWNLOAD.
 

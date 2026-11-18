@@ -4,7 +4,7 @@ title: Inbox
 image: otic
 ---
 
-## Cold open
+## What went wrong
 
 *Psych at the computer. Otic reads over his shoulder.*
 
