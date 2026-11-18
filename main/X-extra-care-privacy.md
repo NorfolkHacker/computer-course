@@ -8,7 +8,7 @@ image: unicorn-boy
 
 *Otic on his phone, beaming, typing a post.*
 
-**Otic:** "Off to Spain for two weeks tomorrow! House all to itself! Happy birthday to me, 50 today!" And a photo of us outside the front door. You can see the house number.
+**Otic:** "Off to Spain for two weeks tomorrow! House all to itself! Happy birthday to me!" And a photo of us outside the front door. You can see the house number.
 
 **Psych:** Lovely. Tag the street too, so people can find it.
 
