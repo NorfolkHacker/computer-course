@@ -209,7 +209,7 @@ nav.top .home { font-weight: 700; text-decoration: none; color: var(--ink); }
 /* ---------- handbook ---------- */
 .cover { text-align: center; padding: 48px 0; }
 .cover-img { width: 220px; }
-.contents-list { columns: 2 220px; }
+.contents-list { columns: 2 220px; list-style: none; padding: 0; }
 .handbook .lesson { margin-top: 48px; }
 
 /* ---------- print ---------- */
@@ -219,7 +219,10 @@ nav.top .home { font-weight: 700; text-decoration: none; color: var(--ink); }
   body { font-size: 12pt; background: #fff; }
   nav.top, .skip, .pager, .done-row, .print-it { display: none !important; }
   main { max-width: none; padding: 0; }
-  .s { break-inside: avoid-page; border-width: 1.5px; box-shadow: none; }
+  .s { break-inside: auto; border-width: 1.5px; box-shadow: none; padding: 10px 14px; margin: 10px 0; }
+  h2, h3 { break-after: avoid; }
+  .s-cold-open, .s-the-operator-says, .s-scribble-watch, .platform, tr { break-inside: avoid; }
+  .cover-img { width: auto; height: 9cm; }
   .s-the-operator-says { border: 2px solid #000; }
   .s-the-operator-says h2::after { content: none; }
   .handbook .lesson { break-before: page; margin-top: 0; }
