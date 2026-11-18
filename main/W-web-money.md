@@ -86,7 +86,7 @@ Once a week, open your banking app and scroll down your recent payments. Look fo
 Act straight away. Minutes matter.
 
 1. **Ring your bank** using the number on the back of your bank card. Never use a number from a text, email or caller.
-2. Or ring **159** from any phone. It's the UK **Stop Scams** number and puts you through to your bank safely.
+2. Or ring **159** from most UK phones. It's the UK **Stop Scams** number and puts you through to your bank safely.
 3. Tell them what happened. They can freeze your card and try to stop or recover payments.
 4. Report it to **Report Fraud** (it replaced Action Fraud in 2025), at `reportfraud.police.uk` or on **0300 123 2040** (in Scotland, ring Police Scotland on **101**).
 5. Change the password for that account (Lesson K).

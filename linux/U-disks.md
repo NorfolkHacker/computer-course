@@ -37,7 +37,7 @@ Full disks, sticks that "won't open", drives that vanish after reboot: everyday 
 
 - A **disk** is the hardware: SSD, hard drive, USB stick. Linux names them `/dev/sda`, `/dev/sdb` or `/dev/nvme0n1`.
 - A disk is split into **partitions**, numbered sections: `/dev/sdb1`, `/dev/nvme0n1p2`.
-- Each partition has a **filesystem**, the way files are organised on it. Debian, Ubuntu and Mint use **ext4** by default; Fedora uses **btrfs**; on Arch you chose at install (often ext4). USB sticks usually use **FAT32** or **exFAT**, which Windows reads too.
+- Each partition has a **filesystem**, the way files are organised on it. Debian, Ubuntu and Mint use **ext4** by default; Fedora Workstation uses **btrfs** (Fedora Server uses **XFS**); on Arch you chose at install (often ext4). USB sticks usually use **FAT32** or **exFAT**, which Windows reads too.
 - **Mounting** attaches a partition to a folder (the **mount point**) so its files appear there.
 
 ### Seeing your disks: lsblk

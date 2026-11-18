@@ -85,7 +85,7 @@ Never install an app from a link in a text, email or website. If your phone asks
 A **screen lock** means the phone needs your PIN, pattern, fingerprint or face to unlock, so if it's lost nobody can get into your email, photos or bank.
 
 1. Open **Settings**.
-2. Pixel: tap **Security & privacy**, then **Device unlock**, then **Screen lock**. Samsung: tap **Lock screen**, then **Screen lock type**. Anywhere else: search for `screen lock`.
+2. Pixel: tap **Security & privacy**, then **Device unlock**, then **Screen lock**. Samsung: tap **Lock screen and AOD** (or **Lock screen**), then **Screen lock and biometrics** (or **Screen lock type**). Anywhere else: search for `screen lock`.
 3. Choose **PIN** (at least six digits, not your birthday) and follow the steps.
 4. Optionally add a **fingerprint** or **face unlock**; the PIN stays as the backup.
 

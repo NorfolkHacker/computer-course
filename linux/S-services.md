@@ -110,7 +110,7 @@ Installing a package that contains a service usually **starts and enables it str
 
 ### On Fedora
 
-Services are installed **switched off**. After installing, run `sudo systemctl enable --now NAME`. Fedora's firewall may also need opening for it (lesson T).
+Most services are installed **switched off** (a few, such as `crond`, are set to start at the next boot but aren't started now). After installing, run `sudo systemctl enable --now NAME`. Fedora's firewall may also need opening for it (lesson T).
 
 ### On Arch / Manjaro
 

@@ -68,7 +68,7 @@ Luser list, entry fourteen: "My phone won't leave me alone." Your phone is not h
 ### On Android
 
 1. Swipe down twice from the top. Drag the **brightness** slider.
-2. For night light: **Settings** → **Display** → **Night Light**, then **Schedule** → **Turns on from sunset to sunrise**. On Samsung phones it's called **Eye comfort shield**.
+2. For night light: **Settings** → **Display & touch** (on older phones just **Display**) → **Night Light** (on the newest Pixels it's inside **Comfort filters**), then **Schedule** → **Turns on from sunset to sunrise**. On Samsung phones it's called **Eye comfort shield**. If you can't find it, search Settings for `night light`.
 
 ### Sound and volume
 
@@ -95,9 +95,9 @@ Luser list, entry fourteen: "My phone won't leave me alone." Your phone is not h
 
 ### On Android
 
-1. Swipe down twice and tap the **Do Not Disturb** tile. Or go to **Settings** → **Notifications** → **Do Not Disturb**.
+1. Swipe down twice and tap the **Do Not Disturb** tile (on some phones the tile is called **Modes**). Or go to **Settings** → **Modes** → **Do Not Disturb** (on older phones: **Settings** → **Notifications** → **Do Not Disturb**).
 2. Under **People**, you can let chosen contacts through.
-3. Tap **Schedules** to have it come on every night automatically. On some newer phones this is called **Modes**, or **Bedtime mode**.
+3. To have it come on every night automatically, go to **Settings** → **Modes** → **Bedtime** and set your times. On older phones, tap **Schedules** inside Do Not Disturb. If you can't find either, search Settings for `do not disturb`.
 
 ### Turning off one app's notifications
 

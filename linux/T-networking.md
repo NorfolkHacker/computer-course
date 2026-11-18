@@ -83,13 +83,15 @@ If the gateway answers but `1.1.1.1` (a public server) doesn't, the problem is b
 
 ### On Debian / Ubuntu / Mint
 
-DNS is handled by **systemd-resolved**. See which DNS servers you're using:
+On Ubuntu and Mint, DNS is handled by **systemd-resolved**. See which DNS servers you're using:
 
 ```bash
 resolvectl status
 ```
 
 `/etc/resolv.conf` will just say `nameserver 127.0.0.53`: that's resolved, passing questions on.
+
+Plain Debian doesn't use systemd-resolved by default: NetworkManager (or the network setup) writes the DNS servers straight into `/etc/resolv.conf`, so read that with `cat /etc/resolv.conf`.
 
 ### On Fedora
 
@@ -185,7 +187,7 @@ A **firewall** decides which incoming connections are allowed. **Golden rule: if
 
 ### On Debian / Ubuntu / Mint
 
-**ufw** ("uncomplicated firewall") is installed but switched off.
+**ufw** ("uncomplicated firewall") is installed but switched off on Ubuntu and Mint. Plain Debian has no firewall tool installed; add ufw first with `sudo apt install ufw`.
 
 ```bash
 sudo ufw status verbose

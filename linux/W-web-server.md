@@ -129,7 +129,7 @@ On Fedora and Arch, use `/usr/share/nginx/html/index.html`. Type a tiny page:
 <p>It works.</p>
 ```
 
-Save, and refresh the browser. No restart is needed for new files.
+Save, and refresh the browser. No restart is needed for new files. (On Fedora and Arch that file comes with a package, so an update can put the welcome page back. For a page that lasts, use your own folder, as in the server block below.)
 
 ### Fedora: SELinux labels
 

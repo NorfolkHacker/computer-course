@@ -68,7 +68,7 @@ A laptop usually has a **touchpad**: a flat smooth patch below the keyboard that
 - **Drag**: tap twice, keep your finger down on the second tap, then slide.
 - **Scroll**: put two fingers on the pad and slide them up or down together.
 
-If the pointer is too fast or too slow, change it: open **Start**, then **Settings**, then **Bluetooth & devices**, then **Mouse** (or **Touchpad**), and move the **Mouse pointer speed** slider. If you can't find it, type "mouse" into the search box at the top of **Settings**.
+If the pointer is too fast or too slow, change it: open **Start**, then **Settings**, then **Bluetooth & devices**, then **Mouse**, and move the **Mouse pointer speed** slider. On a laptop, click **Touchpad** instead and move the **Cursor speed** slider. If you can't find it, type "mouse" into the search box at the top of **Settings**.
 
 ### On Android (your phone)
 

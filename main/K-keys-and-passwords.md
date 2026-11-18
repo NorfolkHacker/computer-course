@@ -58,14 +58,14 @@ You probably already have one:
 ### On Windows
 
 - **Google Chrome:** click the three dots **⋮** (top-right) → **Passwords and autofill** → **Google Password Manager**.
-- **Microsoft Edge:** click the three dots **…** (top-right) → **Settings** → **Passwords**. If you can't see it, type `passwords` into the **Search settings** box at the top-left.
+- **Microsoft Edge:** click the three dots **…** (top-right) → **Settings** → **Passwords and autofill** → **Microsoft Password Manager**. If you can't see it, type `passwords` into the **Search settings** box at the top-left.
 - When you sign in somewhere, the browser asks **Save password?** Click **Save**.
 - When signing up, the browser may offer a **suggested strong password**. Accept it; it's remembered for you.
 
 ### On Android
 
 - Your phone uses **Google Password Manager**, shared with Chrome on the computer if both use the same Google account.
-- To see it: open **Settings**, tap the search bar at the top and type `password manager`. On a Pixel it's under **Passwords, passkeys & accounts**. Menus vary by phone maker.
+- To see it: open **Settings**, tap the search bar at the top and type `password manager`. On a Pixel it's under **Passwords and accounts** (or **Passwords, passkeys & accounts**), then **Google**. Menus vary by phone maker.
 - When an app asks you to sign in, tap the password box: your saved password is offered above the keyboard.
 
 For one that works in every browser and phone, **Bitwarden** is a good free choice; get it only from `bitwarden.com` or the Play Store.
@@ -83,10 +83,10 @@ The password that opens your password manager (usually your **Google** or **Micr
 Turn it on for your email, Google and Microsoft accounts, and bank. For your Google account:
 
 1. In your browser, go to `myaccount.google.com` and sign in.
-2. Click **Security** on the left (or tap the **Security** tab on the phone).
-3. Click **2-Step Verification** and follow the steps.
+2. Click **Security & sign-in** on the left (or tap that tab on the phone).
+3. Under **How you sign in to Google**, click **2-Step Verification** and follow the steps.
 
-For your Microsoft account, go to `account.microsoft.com`, click **Security**, and look for **two-step verification**.
+For your Microsoft account, go to `account.microsoft.com`, click **Security**, then **Manage how I sign in**, and look for **Two-step verification**.
 
 ### Never share a code
 
@@ -95,7 +95,7 @@ For your Microsoft account, go to `account.microsoft.com`, click **Security**, a
 ## Do it now
 
 1. On the computer, open Chrome or Edge and find the saved passwords page using the steps above.
-2. In Google Password Manager, click **Checkup** (in Edge, look for **Password Monitor** or **Password health**). It tells you about passwords that are reused, weak or leaked.
+2. In Google Password Manager, click **Checkup** (in Edge, look for **Password security check**). It tells you about passwords that are reused, weak or leaked.
 3. Don't fix everything today. Pick the one most important account it flags (email first) and change that password to three random words, saving it in the password manager.
 4. Then turn on 2-Step Verification for your Google account.
 

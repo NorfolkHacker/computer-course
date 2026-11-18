@@ -41,7 +41,7 @@ The screen you see after signing in is the **desktop**. The bar along the bottom
 1. Click the **Start** button: the Windows logo ⊞ in the taskbar at the bottom of the screen. You can also press the <kbd>Windows</kbd> key on the keyboard.
 2. The **Start menu** opens. At the top is a search box; under it, **Pinned** shows some apps as icons.
 3. To open an app, click its icon once.
-4. If the app isn't in **Pinned**, either type its name straight away (the search box fills in as you type) and press <kbd>Enter</kbd>, or click **All** (or **All apps**, depending on your version) at the top right of **Pinned** to see an A–Z list.
+4. If the app isn't in **Pinned**, either type its name straight away (the search box fills in as you type) and press <kbd>Enter</kbd>, or click **All** (or **All apps**) at the top right of **Pinned** to see an A–Z list. On newer versions there's no such button: scroll down the Start menu to the **All** section instead.
 
 ### The three window buttons
 

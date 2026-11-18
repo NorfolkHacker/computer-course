@@ -56,7 +56,7 @@ At the top, Google may also show an **AI Overview**: a summary written by a comp
 Companies pay to appear at the top (and sometimes the bottom) of the results. These are **adverts**, also called **sponsored results**.
 
 - On **Google**, adverts have the word **Sponsored** above them.
-- On **Bing**, they're marked **Ad**.
+- On **Bing**, they're marked **Sponsored** or **Ad**.
 
 Adverts aren't always bad, but they're never the "best" answer; they're just whoever paid most. For anything official, **skip the adverts** and scroll down to the first normal result.
 

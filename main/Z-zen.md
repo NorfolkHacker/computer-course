@@ -48,7 +48,7 @@ Pick a day each month and do these five things.
 
 ### Step 2: Restart
 
-On the computer: **Start** → power icon → **Restart**. On the phone: hold the power button (with volume up on some phones) and tap **Restart**.
+On the computer: **Start** → power icon → **Restart**. On the phone: hold the power button (with volume up on newer Pixels, or the side key with volume down on Samsung) and tap **Restart**.
 
 ### Step 3: Empty Downloads
 
@@ -65,7 +65,7 @@ On the computer: **Start** → power icon → **Restart**. On the phone: hold th
 ### Step 5: Clear out apps you don't use
 
 - Windows: **Start** → **Settings** → **Apps** → **Installed apps**. Click the **...** next to an app you don't use, then **Uninstall**.
-- Android: press and hold the app's icon, then tap **Uninstall**.
+- Android: press and hold the app's icon, tap **App info**, then **Uninstall**.
 
 Only remove apps you recognise. If in doubt, leave it.
 

@@ -63,9 +63,9 @@ On your Android phone, you can do the same from **Settings** → **Google** → 
 ### Checking your Microsoft account
 
 1. Go to `account.microsoft.com/security` and sign in.
-2. Look for the section listing the ways you sign in and prove who you are (Microsoft changes the wording from time to time; it may be called **Manage how I sign in** or **Additional security options**).
+2. Look for the section listing the ways you sign in and prove who you are (Microsoft changes the wording from time to time; it's currently called **Manage how I sign in**; older pages say **Advanced security options**).
 3. Check the phone number and email listed are current. Add your mobile and another email if they're missing; remove any old ones.
-4. Turn on **Two-step verification** if it's off.
+4. Under **Additional security**, turn on **Two-step verification** if it's off.
 
 To see which Microsoft account you use on your PC: **Start** → **Settings** → **Accounts**. Your email address is at the top.
 

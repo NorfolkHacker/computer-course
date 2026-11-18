@@ -85,11 +85,11 @@ You don't need a scanner. Your phone's camera can turn a paper page into a neat 
 **With Google Drive** (on almost every Android phone):
 
 1. Open the **Drive** app.
-2. Tap the **+** button (bottom right), then **Scan**.
+2. Tap the **Camera** button (bottom right, just above **+ New**). On older versions, tap **+** then **Scan**.
 3. Allow the camera if asked.
 4. Lay the paper flat on a dark table in good light. Hold the phone straight above it and press the shutter button.
-5. To add another page, tap the **+** and take another photo.
-6. Tap **Done** (or **Save**), give it a name, and tap **Save**. It's now in your Google Drive, and you can open it on your PC at **drive.google.com**.
+5. To add another page, tap **Add** (the **+** icon) and take another photo.
+6. Tap **Done**, give it a name, check **PDF** is chosen, and tap **Save**. It's now in your Google Drive, and you can open it on your PC at **drive.google.com**.
 
 **With the camera:** on many phones, pointing the **Camera** app at a document brings up a **Scan** button or a document outline. Tap it. Names vary by maker; if you don't see it, use Drive.
 

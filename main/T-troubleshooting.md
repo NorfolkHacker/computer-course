@@ -71,7 +71,7 @@ Use **Restart**, not **Shut down**, when fixing problems; it gives the cleanest 
 
 ### On Android (Restart)
 
-1. Press and hold the **power button** on the side. On many newer phones (Pixel, Samsung) hold **power** and **volume up** together instead.
+1. Press and hold the **power button** on the side. On newer Pixels hold **power** and **volume up** together instead; on Samsung, hold the **side key** and **volume down** together (for a few seconds; a quick press takes a screenshot).
 2. Tap **Restart** on the menu that appears.
 
 You can also swipe down twice from the top of the screen and tap the **power** icon ⏻.

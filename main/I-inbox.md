@@ -69,7 +69,7 @@ This lesson uses **Gmail** (Google's email) and **Outlook** (Microsoft's). The b
 
 ### Writing a new email
 
-1. In Gmail on the computer, click **Compose** (top-left). In the Gmail app, tap **Compose** (bottom-right, with a pencil). In Outlook, click **New mail** (top-left).
+1. In Gmail on the computer, click **Compose** (top-left). In the Gmail app, tap **Compose** (bottom-right, with a pencil). In Outlook, click **New mail** (top-left; it may say **New message**).
 2. In **To**, type the person's full email address.
 3. In **Subject**, type a short title.
 4. Click or tap in the big box and type your message.
@@ -98,7 +98,7 @@ To **open** an attachment:
 To **send** an attachment:
 
 1. Start a new email or a reply.
-2. Click the **paperclip** icon 📎. In Gmail on the computer it's along the bottom of the message box; in the Gmail app it's at the top. In Outlook it's labelled **Attach file**.
+2. Click the **paperclip** icon 📎. In Gmail on the computer it's along the bottom of the message box; in the Gmail app it's at the top. In Outlook it's labelled **Attach** or **Attach file**.
 3. Find the file and click or tap it, then **Open** (on the computer).
 4. Wait until the file's name appears in the email, then **Send**.
 

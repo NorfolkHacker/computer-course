@@ -76,7 +76,7 @@ A **permission** is something an app is allowed to use: your location, camera, m
 
 1. Open **Settings**.
 2. Tap **Security & privacy**, then **Privacy controls** (on some phones just **Privacy**).
-3. Tap **Privacy dashboard** to see which apps used your location, camera and microphone in the last day.
+3. Tap **Privacy dashboard** to see which apps used your location, camera and microphone recently (the last 24 hours, or 7 days on some phones).
 4. Go back and tap **Permission manager** to see each permission, and which apps have it.
 5. Tap a permission (for example **Location**), tap an app that doesn't need it, and choose **Don't allow** (or **Ask every time**).
 

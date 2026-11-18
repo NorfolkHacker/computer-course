@@ -100,7 +100,7 @@ For drives that aren't always plugged in, add `nofail` to the options in `/etc/f
 
 ### Boot a live USB and chroot in
 
-If none of that works, start from the live USB (or ISO) you installed from (lesson B). Choose **Try** rather than **Install**. Open a terminal, and find your Linux partition, usually the biggest `ext4` or `btrfs` one:
+If none of that works, start from the live USB (or ISO) you installed from (lesson B). On Mint, Ubuntu or Fedora, choose **Try** (or **Try Fedora**) rather than **Install**; the Arch ISO starts straight at a root prompt, which is what you want. Open a terminal, and find your Linux partition, usually the biggest `ext4` or `btrfs` one:
 
 ```bash
 lsblk -f

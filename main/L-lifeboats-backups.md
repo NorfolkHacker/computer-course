@@ -69,7 +69,7 @@ Once it's on, files in those folders show small status icons: a **green tick** m
 **Everything else** (contacts, messages, settings, app list):
 
 1. Open **Settings** and tap the search bar at the top.
-2. Type `backup` and tap **Backup** (on a Pixel it's under **System** → **Backup**; on other phones it may be under **Google** → **Backup**).
+2. Type `backup` and tap **Backup** (on most phones it's under **Google** (or **Google services**) → **All services** → **Backup**; menus vary by maker).
 3. Make sure **Backup by Google One** (or just **Backup**) is turned on. Tap **Back up now** to do one straight away.
 
 ### An external drive: a second copy at home

@@ -81,6 +81,8 @@ What the flags mean:
 - `--exclude='.cache/'`: skip the cache folder, which is junk that rebuilds itself.
 - The `/` at the end of `"$HOME/"` means "the contents of", not the folder itself.
 
+A drive formatted FAT32 or exFAT can't store Linux permissions or owners, so rsync will report errors about them. For a Linux backup drive, ext4 is the better choice. A freshly formatted ext4 drive belongs to root, so give it to yourself once: `sudo chown "$USER": /media/otic/BACKUP` (use your own path).
+
 `mountpoint -q` quietly checks whether a path is a mounted drive. Without that check, an unplugged drive means rsync fills an empty folder on your main disk.
 
 Make it runnable and try it once by hand:
@@ -168,7 +170,7 @@ sudo snapper -c root list
 
 ### On Arch / Manjaro
 
-Manjaro often includes Timeshift. On Arch, try `sudo pacman -S timeshift`; if pacman can't find it, it's in the AUR (lesson L): `yay -S timeshift`. On a btrfs install, **snapper** (`sudo pacman -S snapper`) works as in the Fedora tab.
+Manjaro often includes Timeshift. On Arch, it's in the official repositories: `sudo pacman -S timeshift`. On a btrfs install, **snapper** (`sudo pacman -S snapper`) works as in the Fedora tab.
 
 ### Using Timeshift
 

@@ -46,17 +46,19 @@ sudo apt install unattended-upgrades
 sudo dpkg-reconfigure -plow unattended-upgrades
 ```
 
-Answer **Yes**. It installs security updates only. On a Mint desktop, **Update Manager** → **Edit** → **Preferences** → **Automation** does the same.
+Answer **Yes**. It installs security updates only. On a Mint desktop, **Update Manager** → **Edit** → **Preferences** → **Automation** does a similar job (it installs all updates, not only security ones).
 
 ### On Fedora
 
-The tool is **dnf-automatic**. On Fedora 41 and later (dnf5), install it and copy its example settings into place:
+The tool is dnf's **automatic** plugin. On Fedora 41 and later (dnf5), its package is `dnf5-plugin-automatic` (the older `dnf-automatic` package is for dnf4). Install it and copy its example settings into place:
 
 ```bash
-sudo dnf install dnf-automatic
+sudo dnf install dnf5-plugin-automatic
 sudo cp /usr/share/dnf5/dnf5-plugins/automatic.conf /etc/dnf/automatic.conf
 sudo nano /etc/dnf/automatic.conf
 ```
+
+(If the first file isn't there, `rpm -ql dnf5-plugin-automatic | grep conf` shows where your version keeps it.)
 
 Under `[commands]`, set `apply_updates = yes`, save, and switch on the timer:
 
@@ -115,6 +117,8 @@ That should say `Permission denied`. Only now close the spare session. If the th
 On a server, block everything coming in, then allow only what you use (lesson T). For now, that's SSH. Keep your spare session open.
 
 ### On Debian / Ubuntu / Mint
+
+On plain Debian, install ufw first: `sudo apt install ufw`.
 
 ```bash
 sudo ufw default deny incoming
@@ -193,7 +197,7 @@ Banned yourself? From another machine: `sudo fail2ban-client set sshd unbanip 19
 
 ### Who's been in?
 
-`who` lists who is logged in now; `last -n 10` lists the last ten logins (on some newer releases `last` is missing; use the journal). The SSH log shows every attempt; use `-u sshd` on Fedora and Arch:
+`who` lists who is logged in now; `last -n 10` lists the last ten logins. Debian 13 no longer includes `last`: install it with `sudo apt install wtmpdb libpam-wtmpdb` (it only records logins from then on), or use the journal. The SSH log shows every attempt; use `-u sshd` on Fedora and Arch:
 
 ```bash
 sudo journalctl -u ssh --since today | grep -E "Accepted|Failed|Invalid"

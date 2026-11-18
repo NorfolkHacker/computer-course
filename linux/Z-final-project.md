@@ -56,7 +56,7 @@ To give another user `sudo` later: `sudo usermod -aG sudo name`.
 
 ### On Fedora
 
-Use **Fedora Server**. In the installer, create your user and tick **Make this user administrator**, which adds it to the `wheel` group. SSH is switched on already. So is **Cockpit**, a web admin page on port 9090; remove it from the firewall if you won't use it (lesson V).
+Use **Fedora Server**. In the installer, create your user and tick the box that gives it administrative privileges (the wording varies by release; it adds the user to the `wheel` group). SSH is switched on already. So is **Cockpit**, a web admin page on port 9090; remove it from the firewall if you won't use it (lesson V).
 
 ### On Arch / Manjaro
 
@@ -91,7 +91,7 @@ Deny incoming by default; allow SSH and HTTP. Set up the fail2ban `sshd` jail wi
 
 ### 5. Automatic updates (lessons M and V)
 
-Debian and Ubuntu: `unattended-upgrades`. Fedora: `dnf-automatic` with its timer. Arch: a weekly reminder to read the news and run `sudo pacman -Syu`.
+Debian and Ubuntu: `unattended-upgrades`. Fedora: `dnf5-plugin-automatic` with its `dnf5-automatic.timer`. Arch: a weekly reminder to read the news and run `sudo pacman -Syu`.
 
 ### 6. A web page (lesson W)
 
@@ -163,7 +163,7 @@ A server you never look at is a server you've lost track of. Once a week, log in
 | Disk space | `df -h` |
 | Failed services | `systemctl --failed` |
 | Errors this week | `sudo journalctl -p err --since "7 days ago"` |
-| Who's logged in, who's knocking | `last -n 20` and `sudo fail2ban-client status sshd` |
+| Who's logged in, who's knocking | `last -n 20` (on Debian 13, after installing `wtmpdb`; lesson V) and `sudo fail2ban-client status sshd` |
 | Backup ran | `systemctl list-timers` and `journalctl -u server-backup.service -n 5` |
 | Updates | Debian/Ubuntu: `less /var/log/unattended-upgrades/unattended-upgrades.log`; Fedora: `journalctl -u dnf5-automatic`; Arch: read the news, then `sudo pacman -Syu` |
 

@@ -43,7 +43,7 @@ Installed and running already. The service is called `cron`.
 
 ### On Fedora
 
-Usually installed, as the package **cronie**; the service is called `crond`. If `crontab` says "command not found":
+Fedora Workstation doesn't include it any more (other editions may). The package is **cronie** and the service is called `crond`. If `crontab` says "command not found":
 
 ```bash
 sudo dnf install cronie
@@ -61,7 +61,7 @@ sudo systemctl enable --now cronie
 
 ### What enable --now means
 
-`systemctl enable --now` means "start this service now, and every time the computer boots". Lesson S covers it fully. Psych skipped this step: he wrote a timetable for a cron that wasn't installed.
+`systemctl enable --now` means "start this service now, and every time the computer boots". Lesson S covers it fully. Psych skipped this step: he installed cron but never switched it on, so nothing ever read his timetable.
 
 ### Editing your timetable
 
@@ -71,7 +71,7 @@ Each user has their own timetable, the **crontab**. Edit it with:
 crontab -e
 ```
 
-The first time, Debian, Ubuntu and Mint ask which editor you want: choose **nano**. Fedora and Arch go straight into **vi** (Psych's black screen of tildes) unless you say otherwise. Ask for nano instead:
+The first time, Debian, Ubuntu and Mint ask which editor you want: choose **nano**. Fedora sets nano as the default editor already. Arch goes straight into **vi** (Psych's black screen of tildes), or gives an error if vi isn't installed, unless you say otherwise. Ask for nano instead:
 
 ```bash
 EDITOR=nano crontab -e
