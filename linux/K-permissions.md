@@ -130,7 +130,7 @@ sudo usermod -aG sudo username
 
 ### On Fedora
 
-The group is called `wheel`. Ticking "make this user administrator" during installation puts you in it. To add another user:
+The group is called `wheel`. The first user you create while setting Fedora up is an administrator, so it's already in it (if the installer asks, tick **Make this user administrator**). To add another user:
 
 ```bash
 sudo usermod -aG wheel username

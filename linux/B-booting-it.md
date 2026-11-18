@@ -42,16 +42,16 @@ Use a virtual machine for this course. You can try all three families that way.
 An **ISO** is a single file holding a whole installer disc. Only download it from the official site:
 
 - **Linux Mint**: `linuxmint.com` → **Download**. Choose the **Cinnamon Edition**.
-- **Ubuntu**: `ubuntu.com` → **Download** → **Ubuntu Desktop** (24.04 LTS).
+- **Ubuntu**: `ubuntu.com` → **Download** → **Ubuntu Desktop** (pick the newest **LTS**, such as 26.04 LTS).
 - **Fedora**: `fedoraproject.org` → **Workstation** → download the **x86_64** live ISO.
 - **Arch**: `archlinux.org` → **Download**, then a UK mirror.
 
 ### Check the download
 
-Each download page lists a **SHA256 sum**: a long string worked out from the file. If your copy gives the same string, it arrived whole and untampered. On Windows, open **PowerShell** (**Start**, type `powershell`, <kbd>Enter</kbd>), type `Get-FileHash ` (with a space), drag the ISO onto the window and press <kbd>Enter</kbd>:
+Each download page lists a **SHA256 sum**: a long string worked out from the file. If your copy gives the same string, it arrived whole and untampered. On Windows, open **PowerShell** (**Start**, type `powershell`, <kbd>Enter</kbd>), type `Get-FileHash ` (with a space), drag the ISO onto the window (so the real file name, with its version number, fills in) and press <kbd>Enter</kbd>:
 
 ```powershell
-Get-FileHash C:\Users\you\Downloads\linuxmint-22-cinnamon-64bit.iso
+Get-FileHash C:\Users\you\Downloads\linuxmint-cinnamon-64bit.iso
 ```
 
 Compare the **Hash** it prints with the official one (Mint and Ubuntu list theirs in a `sha256sum.txt` or `SHA256SUMS` file beside the download, Fedora in its **CHECKSUM** file, Arch on the download page). If they differ, delete the file and download it again. On Linux, the same check is `sha256sum` followed by the file name.
@@ -63,13 +63,13 @@ Compare the **Hash** it prints with the official one (Mint and Ubuntu list their
 1. Open **VirtualBox** and click **New** (top of the window).
 2. **Name**: `Mint` (or `Fedora`, or `Arch`).
 3. **ISO Image**: choose **Other...** and pick your ISO. VirtualBox usually fills in **Type** and **Version**; check they say **Linux** and your distro.
-4. If you see **Skip Unattended Installation**, tick it, so you do the install yourself.
-5. Click **Next**. Set **Base Memory** to at least `4096 MB` and **Processors** to `2`.
-6. Click **Next**. Choose **Create a Virtual Hard Disk Now**, at `25 GB` or more.
-7. Click **Next**, then **Finish**.
+4. Turn off the automatic (**unattended**) install, so you do the install yourself. On VirtualBox 7.0, tick **Skip Unattended Installation**; on newer versions, untick **Install OS Using Unattended Installation** (or a box with similar wording).
+5. Set **Base Memory** to at least `4096 MB` and **Processors** to `2`.
+6. Give the virtual hard disk `25 GB` or more. (On VirtualBox 7.0 this is its own page: choose **Create a Virtual Hard Disk Now**.)
+7. Click **Next** through any remaining pages, then **Finish**.
 8. Select your new machine on the left and click **Start**.
 
-The wording moves around a little between VirtualBox 7 versions; the choices are the same. An error about **VT-x** or **AMD-V** means virtualisation is switched off in your PC's firmware settings (the **BIOS** or **UEFI**). If the mouse gets stuck inside the VM, press the right-hand <kbd>Ctrl</kbd> key (the **Host key**).
+The wording and layout move around between VirtualBox 7 versions (7.0 uses separate pages with **Next**; newer versions put the sections on one page); the choices are the same. An error about **VT-x** or **AMD-V** means virtualisation is switched off in your PC's firmware settings (the **BIOS** or **UEFI**). If the mouse gets stuck inside the VM, press the right-hand <kbd>Ctrl</kbd> key (the **Host key**).
 
 ### Or: a live USB
 
@@ -96,14 +96,14 @@ In the VM, **erase disk** means the VM's pretend disk only.
 5. Fill in your name, computer name, username and password. Write the password down.
 6. When it finishes, click **Restart Now**.
 
-**Ubuntu 24.04**: the installer opens by itself. Choose **Install Ubuntu**, **Interactive installation**, tick both third-party boxes, then **Erase disk and install Ubuntu**. Create your account, pick your time zone, and click **Install**.
+**Ubuntu**: the installer opens by itself (the wording below is from 24.04 LTS; newer versions are very similar). Choose **Install Ubuntu**, **Interactive installation**, tick both third-party boxes, then **Erase disk and install Ubuntu**. Create your account, pick your time zone, and click **Install**.
 
 ### On Fedora
 
 Fedora's installer is called **Anaconda**. On the live desktop, choose **Install Fedora** (in some versions it's called **Install to Hard Drive**).
 
 1. Choose your language.
-2. Choose the disk and the option to use the whole disk, partitioned automatically (the wording differs between Fedora 41 and 42).
+2. Choose the disk and the option to use the whole disk, partitioned automatically (the wording differs between Fedora releases).
 3. Review the summary and start the installation.
 4. When it's done, restart.
 
@@ -119,12 +119,12 @@ archinstall
 
 `archinstall` is Arch's official guided installer: a menu you drive with the arrow keys and <kbd>Enter</kbd>.
 
-1. **Mirrors**: choose **United Kingdom**.
+1. **Mirrors and repositories** → **Select regions**: choose **United Kingdom**.
 2. **Locales**: set the keyboard layout to `uk`.
-3. **Disk configuration**: choose the best-effort default layout, and the VM's disk.
-4. **Root password** and **User account** (newer versions group these under **Authentication**). Make your user a **superuser**, so it can use `sudo`.
+3. **Disk configuration**: choose **Use a best-effort default partition layout**, and the VM's disk.
+4. **Authentication**: set a **Root password** and add a **User account** (older versions show these two directly on the main menu). Answer yes when it asks whether your user should be a **superuser (sudo)**.
 5. **Profile** → **Desktop** → pick **GNOME**, **KDE Plasma** or **Cinnamon**.
-6. **Network configuration**: choose **NetworkManager**.
+6. **Network configuration**: choose **Use Network Manager**.
 7. **Timezone**: `Europe/London`.
 8. Choose **Install**, wait, then reboot.
 

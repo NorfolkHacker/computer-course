@@ -45,7 +45,7 @@ On the machine you want to connect *to*:
 sudo apt install openssh-server
 ```
 
-It starts by itself. The service is called `ssh`. On Ubuntu 24.04 and Mint 22, `systemctl status ssh` may say "inactive" until someone connects; that's normal, it wakes up on demand.
+It starts by itself. The service is called `ssh`. On Ubuntu (24.04 and later) and Mint 22 and later, `systemctl status ssh` may say "inactive" until someone connects; that's normal, it wakes up on demand.
 
 ### On Fedora
 

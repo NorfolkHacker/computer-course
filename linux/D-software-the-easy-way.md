@@ -47,7 +47,7 @@ Each family's store has a different name. Pick your tab.
 
 ### On Fedora
 
-Open **Software** (also called **GNOME Software**) from Activities. If you said yes to third-party repositories when you set Fedora up, it shows apps from Fedora and from Flathub. If you didn't: open **Software**, click the menu button (three lines, top-right) → **Software Repositories**, and click **Enable** next to the third-party repositories.
+Open **Software** (also called **GNOME Software**) from Activities. If you said yes to third-party repositories when you set Fedora up, it shows apps from Fedora and from Flathub. If you didn't: open **Software**, click the menu button (three lines, top-right) → **Software Repositories**, and turn on the switch under **Fedora Third Party Repositories**.
 
 On Fedora's KDE edition, the store is **Discover** instead.
 
@@ -64,9 +64,9 @@ To use Flathub on Arch, install Flatpak with this one command. You'll learn what
 sudo pacman -S flatpak
 ```
 
-Arch's `flatpak` package sets up Flathub for you. Log out and back in afterwards.
+Arch's `flatpak` package sets up Flathub for you. Restart afterwards (logging out and back in is sometimes enough).
 
-**Manjaro** has its own store, **Add/Remove Software** (also called **Pamac**). To see Flatpaks, open its menu → **Preferences** and switch on **Flatpak** support.
+**Manjaro** has its own store, **Add/Remove Software** (also called **Pamac**). To see Flatpaks, open its menu → **Preferences** → **Third Party** and switch on **Enable Flatpak support**. If that switch is missing, install the `libpamac-flatpak-plugin` package (lesson L) and reopen it.
 
 ### Installing an app
 

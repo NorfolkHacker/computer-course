@@ -167,7 +167,7 @@ When there's a long wall of red, the **first** error is usually the cause. Later
 
 Put three things into the search box:
 
-1. Your distro and version: `Fedora 42`, `Mint 22`, `Arch`.
+1. Your distro and version: `Fedora 44`, `Mint 22`, `Ubuntu 26.04`, `Arch`.
 2. The program's name.
 3. The exact error, copied, in quotes: `"No such file or directory"`.
 

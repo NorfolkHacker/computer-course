@@ -148,7 +148,7 @@ Prints your username.
 uname -r
 ```
 
-`uname` shows information about the system; `-r` asks for the **r**elease of the Linux kernel (lesson A), such as `6.8.0-48-generic` on Mint and Ubuntu, or a number ending in `fc41` on Fedora or `arch1-1` on Arch.
+`uname` shows information about the system; `-r` asks for the **r**elease of the Linux kernel (lesson A), such as `6.8.0-48-generic` on Mint and Ubuntu, a number containing `fc` and the Fedora release (such as `…fc44.x86_64` on Fedora 44), or one ending in `arch1-1` on Arch.
 
 ```bash
 cat /etc/os-release

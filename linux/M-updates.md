@@ -39,7 +39,7 @@ Updates keep your system safe. Little and often is easiest.
 
 Distros release new versions in one of two ways:
 
-- **Fixed releases** come out on a schedule. Between releases you get security and bug fixes, but programs stay on roughly the same version, so nothing changes under your feet. Ubuntu releases every six months, with a **Long Term Support (LTS)** version every two years (like 24.04) that's supported for five years. Mint is built on Ubuntu LTS. Fedora releases roughly every six months, and each version is supported for about thirteen months, so you upgrade about once a year.
+- **Fixed releases** come out on a schedule. Between releases you get security and bug fixes, but programs stay on roughly the same version, so nothing changes under your feet. Ubuntu releases every six months, with a **Long Term Support (LTS)** version every two years (like 24.04 and 26.04) that's supported for five years. Mint is built on Ubuntu LTS. Fedora releases roughly every six months, and each version is supported for about thirteen months, so you upgrade about once a year.
 - A **rolling release** never has versions. Updates arrive continuously, so you always have the newest software. Arch is rolling. Manjaro is rolling too, but holds updates back a couple of weeks for extra testing.
 
 Fixed is calmer. Rolling is newer, and needs more attention.
@@ -104,7 +104,7 @@ uname -r
 pacman -Q linux
 ```
 
-If the versions differ, reboot. (On Manjaro the kernel package is named after its version, such as `linux612`.)
+If the versions differ, reboot. (`pacman` writes a dot where `uname` writes a dash, so `6.11.5.arch1-1` and `6.11.5-arch1-1` are the same version. On Manjaro the kernel package is named after its version, such as `linux612`.)
 
 ### Upgrading to a new release
 
@@ -126,11 +126,11 @@ On Mint, small "point" upgrades (22 to 22.1) are offered in **Update Manager** u
 
 ```bash
 sudo dnf upgrade --refresh
-sudo dnf system-upgrade download --releasever=42
+sudo dnf system-upgrade download --releasever=45
 sudo dnf system-upgrade reboot
 ```
 
-Change `42` to the version you're moving to. The computer restarts, installs the upgrade, and restarts again. Check Fedora's docs before skipping a version. GNOME Software also offers the upgrade with a button.
+Change `45` to the version you're moving to (`cat /etc/os-release` shows the one you have now). The computer restarts, installs the upgrade, and restarts again. Check Fedora's docs before skipping a version. GNOME Software also offers the upgrade with a button.
 
 ### On Arch / Manjaro
 
@@ -156,7 +156,7 @@ Arch keeps only one kernel, replacing it on each update. Install the **long-term
 sudo pacman -S linux-lts
 ```
 
-If you use GRUB, regenerate its menu afterwards with `sudo grub-mkconfig -o /boot/grub/grub.cfg`. Manjaro offers kernels in **Manjaro Settings Manager** under **Kernel**.
+If you use GRUB, regenerate its menu afterwards with `sudo grub-mkconfig -o /boot/grub/grub.cfg`. Other boot loaders, such as **systemd-boot** (which `archinstall` may have chosen on a UEFI machine), may need an entry added by hand: see that boot loader's Arch Wiki page. Manjaro offers kernels in **Manjaro Settings Manager** under **Kernel**.
 
 ## Do it now
 

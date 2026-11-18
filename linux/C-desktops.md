@@ -74,7 +74,7 @@ The menu at the very top-right (click the network, sound or battery icons) holds
 A **workspace** (KDE calls it a **virtual desktop**) is an extra, empty desktop. Put your browser on one and your email on another, and switch between them instead of piling windows on top of each other.
 
 - **GNOME**: open the Activities overview. Your workspaces appear as strips; drag a window onto one. GNOME adds a fresh empty workspace automatically. <kbd>Super</kbd> + <kbd>Page Down</kbd> and <kbd>Super</kbd> + <kbd>Page Up</kbd> switch between them.
-- **KDE Plasma**: press <kbd>Super</kbd> + <kbd>W</kbd> for the **Overview**, which shows your desktops at the top. Add more in **System Settings** → **Virtual Desktops**.
+- **KDE Plasma**: press <kbd>Super</kbd> + <kbd>W</kbd> for the **Overview**, which shows your desktops at the top. Add more in **System Settings** → **Virtual Desktops** (search for `virtual desktops` if you can't see it; it sits under **Window Management**).
 - **Cinnamon**: press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Up</kbd> to see all workspaces. <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Left</kbd> and <kbd>Right</kbd> switch between them.
 
 ### Settings
@@ -90,8 +90,8 @@ Open the settings app by name from the menu: **Settings** on GNOME, **System Set
 Where to find them:
 
 - **GNOME**: click the top-right icons, then the **power** icon for **Suspend**, **Restart**, **Power Off** and **Log Out**. The padlock icon locks the screen.
-- **KDE Plasma**: open the **Application Launcher**; the buttons at its bottom-right are **Sleep**, **Restart**, **Shut Down** and a **Leave** menu that holds **Log Out** and **Lock**.
-- **Cinnamon**: open **Menu**; the buttons down its left side include **Lock Screen**, **Log Out** and **Quit** (which offers **Shut Down**).
+- **KDE Plasma**: open the **Application Launcher**; the buttons at its bottom-right are **Sleep**, **Restart**, **Shut Down** (sometimes **Hibernate** too) and a **Session** menu that holds **Lock** and **Log Out**.
+- **Cinnamon**: open **Menu**; the buttons down its left side include **Lock Screen**, **Log Out** and **Shut Down** (hover over a button to see its name; on Mint 22.0 the last one is called **Quit**).
 
 Never hold the power button except as a last resort when the machine has frozen solid. Cutting the power mid-update can leave Linux unable to start.
 
